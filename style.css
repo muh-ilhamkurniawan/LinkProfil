@@ -1,0 +1,104 @@
+/* CSS untuk tampilan desktop */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #333333);
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.social-links {
+  list-style: none;
+  margin-top: 0px;
+  margin: 20px auto;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  flex: 1;
+}
+
+.social-links a {
+  display: block;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #0072ff;
+}
+
+/* CSS untuk tampilan mobile */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .profile-card {
+    max-width: 300px;
+  }
+
+  .profile-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-card h1 {
+    font-size: 24px;
+  }
+
+  .social-links {
+    max-width: 200px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
